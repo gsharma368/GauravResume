@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import django_heroku
-from decouple import config
+# from decouple import config
 import dj_database_url
 
 
@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-%&8e^9o)$xmk8@$&hvtdo2ir6qbawv*hh-63o7g!qu(wvx8+on
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,3 +123,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+django_heroku.settings(locals())

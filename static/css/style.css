@@ -310,8 +310,9 @@ section:last-child {
 	float: left;
 	font-style: italic;
 	color: #6a6d74;
-	margin-top: 12px;
-	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-right: 50px;
 }
 
 .subDetailsAchievements{
